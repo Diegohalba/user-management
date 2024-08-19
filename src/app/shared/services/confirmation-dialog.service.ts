@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject, inject, Injectable } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
@@ -23,12 +24,14 @@ import { filter } from 'rxjs/operators';
 export class ConfirmationDialogComponent {
 
   matDialogRef = inject(MatDialogRef);
+  matSnackBar = inject(MatSnackBar);
 
   onNo(){
     this.matDialogRef.close(false);
   }
   onYes(){
     this.matDialogRef.close(true);
+    this.matSnackBar.open('User deleted! ', 'OK');
   }
 }
 

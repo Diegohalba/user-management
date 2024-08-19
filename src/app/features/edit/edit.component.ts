@@ -24,7 +24,7 @@ export class EditComponent {
 
   onSubmit(user: User) {
     this.usersService.put(this.user.id, user).subscribe(() => {
-        this.matSnackBar.open('User edited! ', 'OK');
+        this.matSnackBar.open('User edited! ', 'OK')
 
         this.router.navigateByUrl('/');
       });
