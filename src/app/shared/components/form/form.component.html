@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+  <div class="form-content-container">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input type="text" matInput formControlName="name" placeholder="Name" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input type="text" matInput formControlName="username" placeholder="Username" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter yuor email</mat-label>
+      <input type="email" matInput formControlName="email" placeholder="angular@example.com" />
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button class="button">Save User</button>
+  </div>
+</form>

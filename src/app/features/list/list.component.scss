@@ -1,0 +1,26 @@
+.action-container{
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.list-container{
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.header-list{
+  width: 131%;
+  color: white;
+  background-color: #0aaaaa;
+  display: flex;
+  line-height: normal;
+}
+td{
+  padding: 8px 80px 8px 24px;
+
+}
+.item-container{
+  margin-bottom: 8px;
+}

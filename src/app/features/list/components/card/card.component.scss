@@ -1,0 +1,24 @@
+.card  {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+
+table { width: 100%;}
+
+td{
+  padding: 0px 0 0 16px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+}
+
+
+.card-actions{
+  justify-content: right;
+  margin-right: 0;
+}
+

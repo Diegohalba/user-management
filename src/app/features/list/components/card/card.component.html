@@ -1,0 +1,32 @@
+<mat-card class="card" appearance="outlined" >
+    <div class="card-header">
+    <mat-card-header>
+      <table cellSpacing="0" cellPadding="0">
+        <tbody>
+          <td>
+            <mat-card-content >{{ userId() }}</mat-card-content>
+          </td>
+          <td>
+            <mat-card-content>{{ userUsername() }}</mat-card-content>
+          </td>
+          <td>
+            <mat-card-content> {{ userName() }}</mat-card-content>
+          </td>
+          <td>
+            <mat-card-content>{{ userEmail() }}</mat-card-content>
+          </td>
+        </tbody>
+      </table>
+    </mat-card-header>
+  </div>
+    <mat-card-actions class="card-actions">
+      <button mat-button (click)="onEdit()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="mode_edit">
+        </mat-icon>
+      </button>
+      <button mat-button (click)="onDelete()" >
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete_outline">
+        </mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
